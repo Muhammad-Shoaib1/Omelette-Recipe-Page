@@ -1,0 +1,147 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/* basic CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(330, 100%, 98%);
+  font-family: 'Outfit', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Young Serif', serif;
+  font-weight: 500;
+}
+
+ul li,
+ol li {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+ul,
+ol {
+  color: hsl(332, 51%, 32%);
+  margin-left: 1.5rem;
+}
+
+li p {
+  color: hsl(24, 5%, 18%);
+}
+
+ul li span,
+ol li span {
+  font-weight: 600;
+}
+
+/* utility classes */
+.hcolor {
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 1rem;
+}
+
+/* main styling */
+.container {
+  background-color: white;
+  width: 60%;
+  margin: 3rem auto;
+  padding: 3rem;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1 1 600px;
+}
+
+.img-box {
+  width: 100%;
+}
+
+.img-box img {
+  width: 100%;
+  border-radius: 5%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.intro {
+  margin: 2rem 0;
+}
+
+.intro h1 {
+  margin-bottom: 1rem;
+}
+
+.prep-sec {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1rem;
+  border-radius: 5%;
+}
+
+
+.ingred-sec {
+  margin: 2rem 0;
+}
+
+section.instructions {
+  margin-top: 2rem;
+}
+
+.nutrition {
+  margin: 2rem 0;
+}
+
+.nutrition p {
+  color: rgb(56, 55, 55);
+  margin-bottom: 1.5rem;
+}
+
+.nutrition table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table tr.row {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.488);
+}
+
+tr td {
+  padding: 0.5rem 0;
+}
+
+tr td.name {
+  color: gray;
+}
+
+tr td.quantity {
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  :root {
+    font-size: 62.5%;
+  }
+
+  .container {
+    width: 75%;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    font-size: 50%;
+  }
+
+  .container {
+    width: 85%;
+  }
+}
